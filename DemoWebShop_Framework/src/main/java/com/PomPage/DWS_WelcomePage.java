@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DWS_WelcomePage {
+import com.FrameWork.Library.BasePage;
+
+public class DWS_WelcomePage extends BasePage {
 	public DWS_WelcomePage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	@FindBy(className = "ico-register")
 	private WebElement registerLink;
@@ -75,6 +77,8 @@ public class DWS_WelcomePage {
 	}
 	@FindBy(xpath = "//div[@class='header-menu']//a[contains(text(),'Gift Cards')]")
 	private WebElement giftCardsLink;
+	
+	
 	public WebElement getRegisterLink() {
 		return registerLink;
 	}

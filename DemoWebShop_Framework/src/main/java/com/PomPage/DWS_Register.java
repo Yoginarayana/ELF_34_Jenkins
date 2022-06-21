@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DWS_Register {
+import com.FrameWork.Library.BasePage;
+
+public class DWS_Register extends BasePage{
 	public DWS_Register(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	@FindBy(xpath = "//input[@id='gender-male']")
 	private WebElement maleGender;

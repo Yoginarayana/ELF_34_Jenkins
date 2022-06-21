@@ -18,6 +18,16 @@ public class DWS_HomePage extends BasePage {
 	public void booksClick() {
 		booksLink.click();
 	}
+	
+	@FindBy(xpath = "//a[text()='14.1-inch Laptop']")
+	private WebElement laptopLink;
+	
+	public WebElement getLaptopLink() {
+		return laptopLink;
+	}
+	public void setLaptopLink(WebElement laptopLink) {
+		this.laptopLink = laptopLink;
+	}
 	@FindBy(xpath = "//div[@class='header-menu']//a[contains(text(),'Computers')]")
 	private WebElement computersLink;
 	public void computersClick() {

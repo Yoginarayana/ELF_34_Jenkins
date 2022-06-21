@@ -58,7 +58,14 @@ public class ReadExcel implements FrameWorkConstants{
 				  data[i-1][j]=sheet.getRow(i).getCell(j).toString();
 			  }
 		  }
+			/*
+			 * for (int i =0; i < rowCount-1;i++) { for (int j = 0; j < colCount; j++) {
+			 * System.out.println(data[i][j]); } }
+			 */
 		  return data;
 		  
 	}
+	/*
+	 * public static void main(String[] args) { testData("Register"); }
+	 */
 }
